@@ -1,0 +1,19 @@
+# Настройки пагинации.
+PAGE_SIZE_DEFAULT = 6
+PAGE_SIZE_QUERY_PARAM = 'limit'
+
+# Ограничения длины полей моделей.
+MAX_TAG_LENGTH = 32
+MAX_NAME_LENGTH = 256
+MAX_INGREDIENT_NAME_LENGTH = 200
+MAX_UNIT_LENGTH = 200
+MAX_EMAIL_LENGTH = 254
+MAX_USER_FIELDS_LENGTH = 150
+
+# Минимальные значения числовых полей.
+MIN_COOKING_TIME = 1
+MIN_INGREDIENT_AMOUNT = 1
+
+# Настройки для админ-панели.
+ADMIN_INLINE_EXTRA = 1
+ADMIN_INLINE_MIN_NUM = 1

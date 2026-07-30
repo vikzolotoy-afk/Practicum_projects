@@ -1,0 +1,27 @@
+# Виртуальное окружение
+venv/
+env/
+
+# Система контроля версий
+.git/
+.gitignore
+
+# База данных (локальная)
+*.sqlite3
+
+# Файлы настроек IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Секретные данные
+.env
+
+# Кэш Python
+__pycache__/
+*.py[cod]
+
+# Прочее
+Dockerfile
+docker-compose.yml

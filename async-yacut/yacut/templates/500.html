@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  {% if form %}
+    Загрузка файлов
+  {% else %}
+    500. Хьюстон, у нас проблемы!
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+<main class="container my-5">
+  {% if form %}
+    {% include 'includes/files_content.html' %}
+  {% else %}
+    <div class="row align-items-center py-5">
+      <div class="col-12 col-lg-7">
+        <h1 class="mb-4">Хьюстон, у нас проблемы!</h1>
+        <p class="lead">
+          Возможно, на сервере произошёл сбой или проводятся технические работы. Попробуйте обновить страницу позже.
+        </p>
+        <a href="{{ url_for('index_view') }}" class="btn btn-primary btn-lg mt-3">
+          На главную
+        </a>
+      </div>
+      <div class="col-12 col-lg-5">
+        <img src="{{ url_for('static', filename='img/500.png') }}" class="img-fluid mx-auto d-block" alt="Error 500" />
+      </div>
+    </div>
+  {% endif %}
+</main>
+{% endblock %}

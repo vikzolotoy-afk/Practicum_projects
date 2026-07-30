@@ -1,0 +1,52 @@
+<div class="text-center mb-5">
+  <h1 class="display-4"><span style="color:red">Ya</span>Cut Files</h1>
+  <p class="text-muted">Асинхронная загрузка файлов на Яндекс Диск</p>
+</div>
+
+<div class="row justify-content-center">
+  <div class="col-md-6 card shadow-sm p-4 border-light mb-5">
+    <form method="POST" enctype="multipart/form-data">
+      {{ form.csrf_token }}
+      <div class="form-group mb-4">
+        {{ form.files.label(class="form-label font-weight-bold mb-2") }}
+        {{ form.files(class="form-control-file d-block w-100") }}
+        
+        {% if form.files.errors %}
+          {% for error in form.files.errors %}
+            <p class="text-danger small mt-1">{{ error }}</p>
+          {% endfor %}
+        {% endif %}
+      </div>
+      {{ form.submit(class="btn btn-danger w-100 font-weight-bold") }}
+    </form>
+  </div>
+</div>
+
+{% if files %}
+<div class="row justify-content-center">
+  <div class="col-md-8 table-responsive shadow-sm rounded p-0">
+    <table class="table table-hover table-striped mb-0 bg-white">
+      <thead class="thead-dark">
+        <tr>
+          <th>Имя файла</th>
+          <th>Короткая ссылка</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for file in files %}
+        <tr>
+          <td class="align-middle text-truncate" style="max-width: 250px;">
+            {{ file.name }}
+          </td>
+          <td class="align-middle">
+            <a href="{{ file.short_url }}" target="_blank" class="text-danger font-weight-bold">
+              {{ file.short_url }}
+            </a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endif %}
