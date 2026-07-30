@@ -28,8 +28,8 @@
 
 1. **Клонируйте репозиторий и перейдите в него:**
    ```bash
-   git clone https://github.com/vikzolotoy-afk/async-yacut.git
-   cd async-yacut
+   git clone https://github.com/vikzolotoy-afk/Practicum_projects.git
+   cd Practicum_projects/async-yacut
    ```
 
 2. **Cоздайте и активируйте виртуальное окружение:**

@@ -21,8 +21,8 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/vikzolotoy-afk/kittygram_final/
-   cd kittygram_final
+   git clone https://github.com/vikzolotoy-afk/Practicum_projects.git
+   cd Practicum_projects/kittygram_final
    ```
 2. Запустите проект в фоновом режиме:
    ```bash

@@ -3,8 +3,8 @@
 1. Клонировать репозиторий и перейти в папку бэкенда:
 
 ```bash
-git clone https://github.com/vikzolotoy-afk/foodgram.git
-cd foodgram/backend
+git clone https://github.com/vikzolotoy-afk/Practicum_projects.git
+cd Practicum_projects/foodgram/backend
 ```
 
 2. Cоздать и активировать виртуальное окружение:

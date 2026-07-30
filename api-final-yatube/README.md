@@ -20,11 +20,11 @@
 Клонировать репозиторий и перейти в него:
 
 ```
-git clone https://github.com/vikzolotoy-afk/api-final-yatube.git
+git clone https://github.com/vikzolotoy-afk/Practicum_projects.git
 ```
 
 ```
-cd api-final-yatube
+cd Practicum_projects/api-final-yatube
 ```
 
 #### Для MacOS/Linux:

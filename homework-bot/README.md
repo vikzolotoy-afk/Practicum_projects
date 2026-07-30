@@ -27,8 +27,8 @@
 
 1. **Клонируйте репозиторий и перейдите в него:**
    ```bash
-   git clone https://github.com/vikzolotoy-afk/homework-bot.git
-   cd homework-bot
+   git clone https://github.com/vikzolotoy-afk/Practicum_projects.git
+   cd Practicum_projects/homework-bot
    ```
 
 2. **Cоздайте и активируйте виртуальное окружение:**
